@@ -10,10 +10,10 @@ import com.example.training.domain.model.BaseViewModel
 import com.example.training.domain.model.ObserverTask
 import com.example.training.domain.model.ObserverTaskManager
 import com.example.training.domain.model.launch
-import dagger.assisted.AssistedInject
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
+import javax.inject.Inject
 import kotlin.coroutines.cancellation.CancellationException
 import kotlin.math.pow
 
@@ -52,10 +52,9 @@ sealed class StateScreen {
 }
 
 @HiltViewModel
-class WorkoutViewModel @AssistedInject constructor(
+class WorkoutViewModel @Inject constructor(
     private val requests: Requests,
     networkManager: NetworkManager,
-    private val workoutId: Int
 ): BaseViewModel<WorkoutUIState>(WorkoutUIState.Empty,networkManager){
 
     private var urlVideo = ""
