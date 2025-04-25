@@ -70,9 +70,10 @@ class WorkoutsFragment : BaseFragment<FragmentWorkoutBinding>() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //Прослушивает жест или кнопку назад
-        // и выполняет остановку видео и выход из фрагмента
+        // и выполняет остановку видео и очищение медиа файла, и выход из фрагмента
         requireActivity().onBackPressedDispatcher.addCallback(this) {
             player?.stop()
+            player?.removeMediaItem(0)
             findNavController().popBackStack()
         }
         //Устанавливает анимацию
