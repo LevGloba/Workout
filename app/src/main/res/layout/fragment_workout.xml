@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".views.workouts.WorkoutsFragment"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5">
+        <include
+            android:id="@+id/include_layout_loading"
+            layout="@layout/layout_loading" />
+
+        <ImageView
+            android:id="@+id/setting_quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:elevation="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/baseline_high_quality_24"/>
+
+        <androidx.media3.ui.PlayerView
+            android:id="@+id/video_player_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/container_information"
+        android:layout_width="match_parent"
+        android:paddingHorizontal="16dp"
+        android:transitionName="ContentText"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.25">
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Утренняя пробежка"
+            android:transitionName="Title"
+            style="@style/TextAppearance.MaterialComponents.Headline3"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/description_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:transitionName="Description"
+            tools:text="Идеальная пробежка для старта дня"
+            style="@style/TextAppearance.MaterialComponents.Headline6"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

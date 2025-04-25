@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation_graph"
+    app:startDestination="@id/workoutsListedFragment">
+
+    <fragment
+        android:id="@+id/workoutsListedFragment"
+        android:name="com.example.training.views.workouts_listed.WorkoutsListedFragment"
+        android:label="fragment_workouts_listed"
+        tools:layout="@layout/fragment_workouts_listed" >
+        <action
+            android:id="@+id/action_workoutsListedFragment_to_workoutsFragment"
+            app:destination="@id/workoutsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/workoutsFragment"
+        android:name="com.example.training.views.workouts.WorkoutsFragment"
+        android:label="fragment_workout"
+        tools:layout="@layout/fragment_workout" >
+        <argument
+            android:name="workout"
+            app:argType="com.example.training.domain.model.WorkoutItemUI" />
+    </fragment>
+</navigation>

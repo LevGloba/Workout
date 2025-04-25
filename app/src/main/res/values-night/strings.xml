@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="string_complex">Комплекс</string>
+    <string name="string_ethir">Эфир</string>
+    <string name="string_workout">Тренировка</string>
+    <string name="string_tv_type">тип:</string>
+    <string name="string_tv_time">время:</string>
+    <string name="string_something_wrong">Что-то пошло не так</string>
+    <string name="string_please_try_again">Попробуйте повторить попытку</string>
+    <string name="string_ok">ок</string>
+    <string name="string_check_network_connection">Проверьте соединение с интернетом</string>
+    <string name="string_quality">Качество</string>
+</resources>
