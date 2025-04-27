@@ -137,13 +137,8 @@ class WorkoutsListedViewModel @Inject constructor(
 }
 
 //Подготавливает данные для отображения в ui
-private fun List<Workout>.prepare(): List<WorkoutItemUI> {
-    val mut = mutableListOf<WorkoutItemUI>()
-    forEach {
-        mut.add(it.prepare())
-    }
-    return mut
-}
+private fun List<Workout>.prepare(): List<WorkoutItemUI>
+    = map { it.prepare() }
 
 private fun Workout.prepare(): WorkoutItemUI =
     WorkoutItemUI(
