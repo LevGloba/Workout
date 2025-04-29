@@ -1,5 +1,14 @@
 Тествое задания, приложения по workout
 
+![image](https://github.com/user-attachments/assets/44da0179-87dd-453b-b2bd-722ff2e7ff2c)
+![image](https://github.com/user-attachments/assets/dcd41c79-b10c-4d11-9193-1d7c0322280e)
+![image](https://github.com/user-attachments/assets/7fdb6cf2-36de-4b7a-b7db-69be673ad4d6)
+![image](https://github.com/user-attachments/assets/b4c89c2e-a95e-4982-80bc-890cdc79c87d)
+![image](https://github.com/user-attachments/assets/b3f43b66-1687-42e7-ac19-73a8957bef68)
+![image](https://github.com/user-attachments/assets/205bdb3a-fd13-4162-a214-9ae22ee15680)
+
+
+
 Использовались библиотеки:
 -ExoPLayer
 -Retrofit
